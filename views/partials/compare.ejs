@@ -1,0 +1,41 @@
+<div id="compare-screen" style="display:none;">
+    <h1 class="display-5 mb-4">Compare Text</h1>
+    <div class="row g-3">
+        <div class="col-12 col-xl-6">
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="fw-bold">Original text</span>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-light btn-sm" id="compare-original-paste"><i class="bi bi-clipboard-plus me-1"></i> Paste</button>
+                            <button class="btn btn-outline-light btn-sm" id="compare-original-copy"><i class="bi bi-clipboard me-1"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div id="compare-original-editor" style="height: 180px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-xl-6">
+            <div class="card bg-dark border-secondary mb-3">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="fw-bold">Modified text</span>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-light btn-sm" id="compare-modified-paste"><i class="bi bi-clipboard-plus me-1"></i> Paste</button>
+                            <button class="btn btn-outline-light btn-sm" id="compare-modified-copy"><i class="bi bi-clipboard me-1"></i> Copy</button>
+                        </div>
+                    </div>
+                    <div id="compare-modified-editor" style="height: 180px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card bg-dark border-secondary">
+                <div class="card-body">
+                    <div class="fw-bold mb-2">Difference</div>
+                    <div id="compare-diff-editor" style="height: 260px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,40 @@
+<div id="jwt-screen" style="display:none;">
+    <h1 class="display-5 mb-4">JWT Decoder</h1>
+    <div class="row g-3">
+        <div class="col-lg-8">
+            <div class="card bg-dark border-secondary mb-4">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <span class="fw-bold">Input (JWT)</span>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-light btn-sm" id="jwt-paste"><i class="bi bi-clipboard-plus me-1"></i> Paste</button>
+                                <button class="btn btn-outline-light btn-sm" id="jwt-clear"><i class="bi bi-x-circle me-1"></i> Clear</button>
+                            </div>
+                        </div>
+                        <div id="jwt-input-editor" style="height: 280px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                            <span class="fw-bold">Decoded</span>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-light btn-sm" id="jwt-copy"><i class="bi bi-clipboard me-1"></i> Copy</button>
+                            </div>
+                        </div>
+                        <div id="jwt-output-editor" style="height: 280px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card bg-dark border-secondary h-100" style="min-height: 600px;">
+                <div class="card-body">
+                    <div class="fw-bold mb-2">JWT Claims & Signature</div>
+                    <div id="jwt-details-claims">
+                        <div class="text-muted small">No valid JWT detected.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

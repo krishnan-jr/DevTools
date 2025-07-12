@@ -1,0 +1,3 @@
+@echo off
+echo Starting Utility App...
+powershell -ExecutionPolicy Bypass -File launch-app.ps1 

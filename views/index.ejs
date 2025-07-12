@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<%- include('partials/head') %>
+<body>
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <%- include('partials/sidebar') %>
+    <main class="col py-4 px-4 main-content">
+      <div id="all-tools-grid"></div>
+      <%- include('partials/filereader') %>
+      <%- include('partials/password') %>
+      <%- include('partials/uuid') %>
+      <%- include('partials/text') %>
+      <%- include('partials/compare') %>
+      <%- include('partials/excel2json') %>
+      <%- include('partials/json2table') %>
+      <%- include('partials/url') %>
+      <%- include('partials/jwt') %>
+      <%- include('partials/htmltext') %>
+    </main>
+  </div>
+</div>
+<%- include('partials/scripts') %>
+</body>
+</html> 

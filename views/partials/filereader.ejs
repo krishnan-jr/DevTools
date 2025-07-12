@@ -1,0 +1,53 @@
+<div id="filereader-screen" style="display:none;">
+    <h1 class="display-5 mb-4">File Reader</h1>
+    <div class="row g-3">
+        <div class="col-lg-6">
+            <div class="card bg-dark border-secondary h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <span class="fw-bold">Output</span>
+                    </div>
+                    <div id="filereader-output-editor" style="height: 600px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex flex-column gap-3">
+            <div class="card bg-dark border-secondary">
+                <div class="card-body">
+                    <div id="filereader-drop-area" class="border border-secondary rounded p-4 text-center" style="border-style: dashed !important; border-width: 1px; background: rgba(255,255,255,0.01);">
+                        <div class="mb-2">Drag & drop any file here</div>
+                        <div class="mb-2">or</div>
+                        <div>
+                            <label class="btn btn-outline-light btn-sm" style="cursor:pointer;">
+                                <i class="bi bi-folder2-open me-1"></i> Browse files
+                                <input type="file" id="filereader-file-input" style="display:none;">
+                            </label>
+                            <span id="filereader-selected-filename" class="text-muted small d-block mt-2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark border-secondary">
+                <div class="card-body d-flex align-items-center gap-3">
+                    <label for="filereader-readmode" class="form-label mb-0 fw-bold">Read as</label>
+                    <div class="dropdown" id="filereader-readmode-dropdown">
+                        <button class="btn btn-outline-light btn-sm dropdown-toggle w-100" type="button" id="filereader-readmode-btn" data-bs-toggle="dropdown" aria-expanded="false">
+                            Data URL
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark w-100" aria-labelledby="filereader-readmode-btn">
+                            <li><a class="dropdown-item active" href="#" data-value="readAsDataURL">Data URL</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="readAsArrayBuffer">ArrayBuffer</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="readAsText">Text</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="readAsBinaryString">Binary String</a></li>
+                        </ul>
+                        <input type="hidden" id="filereader-readmode" value="readAsDataURL">
+                    </div>
+                    <button class="btn btn-primary" id="filereader-generate" type="button">
+                        <i class="bi bi-lightning-charge me-1"></i> Generate
+                    </button>
+                </div>
+                <div class="px-3 pb-2"><small class="text-muted">1. Select a file  2. Choose a mode  3. Click Generate</small></div>
+            </div>
+        </div>
+    </div>
+</div> 

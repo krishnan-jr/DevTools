@@ -1,0 +1,45 @@
+<div id="json2table-screen" style="display:none;">
+    <h1 class="display-5 mb-4">JSON Array to Table</h1>
+    <div class="row g-3">
+        <div class="col-lg-5">
+            <div class="card bg-dark border-secondary mb-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-end gap-2 mb-2">
+                        <span class="fw-bold me-auto">Input</span>
+                        <button class="btn btn-outline-light btn-sm" id="json2table-paste"><i class="bi bi-clipboard-plus me-1"></i> Paste</button>
+                        <button class="btn btn-outline-light btn-sm" id="json2table-copy"><i class="bi bi-clipboard me-1"></i> Copy</button>
+                        <button class="btn btn-outline-light btn-sm" id="json2table-clear"><i class="bi bi-x-circle me-1"></i> Clear</button>
+                    </div>
+                    <div id="json2table-input-editor" style="height: 600px; width: 100%; border-radius: 8px; overflow: hidden;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="card bg-dark border-secondary mb-4">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-end gap-2 mb-2">
+                        <span class="fw-bold me-auto">Output</span>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="json2table-copyas" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-clipboard-check me-1"></i> Copy as</button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="json2table-copyas">
+                                <li><a class="dropdown-item" href="#" data-format="csv">Comma separated values (CSV)</a></li>
+                                <li><a class="dropdown-item" href="#" data-format="tsv">Tab separated values (TSV)</a></li>
+                                <li><a class="dropdown-item" href="#" data-format="scsv">Semicolon separated values (CSV French)</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" id="json2table-saveas" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-save me-1"></i> Save as</button>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="json2table-saveas">
+                                <li><a class="dropdown-item" href="#" data-format="csv">Comma separated values (CSV)</a></li>
+                                <li><a class="dropdown-item" href="#" data-format="tsv">Tab separated values (TSV)</a></li>
+                                <li><a class="dropdown-item" href="#" data-format="scsv">Semicolon separated values (CSV French)</a></li>
+                                <li><a class="dropdown-item" href="#" data-format="excel">Excel (.xlsx)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="json2table-table-container" style="height: 600px; overflow-x:auto; overflow-y:auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
